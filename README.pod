@@ -1,0 +1,21 @@
+=pod
+
+=encoding utf8
+
+=head1 Description
+
+Install and manage multiple Perl6 installations 
+
+=head1 About
+
+Like L<rakudobrew|https://github.com/tadzik/rakudobrew>, but:
+
+=over 8
+
+=item * Not limited to core modules
+
+=item * Installable from cpan
+
+=back
+
+=cut
