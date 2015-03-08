@@ -52,14 +52,14 @@ class App::p6brew with Options::VM with Options::Compiler with Options::ModuleIn
     );
 
     class Installer {
-        has $path => (
+        has path => (
             is  => "rw",
             isa => Str,
         );
 
         method install() {
-            say "path:$path";
-            say "vm:" . $self->vm;
+            say "path:" . $self->path;
+            say "vm:"   . $self->vm;
         }
     } # class Installer
 
