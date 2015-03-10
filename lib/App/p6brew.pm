@@ -51,17 +51,12 @@ class App::p6brew with Options::VM with Options::Compiler with Options::ModuleIn
         isa => Bool,
     );
 
-    class Installer {
-        has path => (
-            is  => "rw",
-            isa => Str,
-        );
 
-        method install() {
-            say "path:" . $self->path;
-            say "vm:"   . $self->vm;
-        }
-    } # class Installer
+    method install(Str :$path = '.') {
+        say "path:" . $path;
+        say "vm:"   . join(',', $self->install_vm);
+    }
+
 
 } # class App::p6brew
 
