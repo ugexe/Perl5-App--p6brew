@@ -23,6 +23,10 @@ WriteMakefile (
         'Module::Build'       => '0.38',        
         'Moops'               => 0,
         'MooX::Options'       => 0,
+        'Git::Repository'     => 0,
+        'IO::Handle'          => 0,
+        'System::Command'     => 0,
+        'Path::Class'         => 0,
     },
     TEST_REQUIRES => {
         'Test::More' => 0,
