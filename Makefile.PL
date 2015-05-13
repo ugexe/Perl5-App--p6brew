@@ -1,4 +1,4 @@
-use 5.14;
+use 5.014;
 use strict;
 use warnings; 
 use ExtUtils::MakeMaker;
@@ -16,7 +16,7 @@ WriteMakefile (
     ABSTRACT            => 'Install and manage multiple Perl6 installations',
     AUTHOR              => 'ugexe <nlogan@gmail.com>',
     LICENSE             => 'perl',
-    MIN_PERL_VERSION    => '5.14',
+    MIN_PERL_VERSION    => '5.014',
     PREREQ_PM           => {
         'ExtUtils::Install'   => '1.46',
         'ExtUtils::MakeMaker' => '6.58',
